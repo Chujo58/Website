@@ -15,4 +15,10 @@ function display($path)
     fclose($file);
 }
 ?>
-hi
+<html>
+
+<body>
+    hi
+</body>
+
+</html>
