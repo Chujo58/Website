@@ -15,6 +15,7 @@ function display($path)
     fclose($file);
 }
 ?>
+<!DOCTYPE html>
 <html>
 
 <body>
