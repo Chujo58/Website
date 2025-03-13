@@ -1,4 +1,9 @@
 :root {
+    /* Fonts */
+    --fancy: "Passions Conflict", serif;
+    --header: "Cinzel", serif;
+    --base: "Josefin Sans", sans-serif;
+    /* Colors */
     --navy: #0e1627;
     --prune: #7f6269;
     --mauve: #bd8e89;
@@ -7,12 +12,18 @@
 
     --background: var(--blush);
 
-    --text: var(--navy);
-    --text-highlight: var(--mauve);
+    --text: var(--prune);
+    --text-highlight-bg: color-mix(in srgb, var(--mauve) 50%, var(--pink) 50%);
+    --text-highlight-fc: var(--navy);
 
     /* Navbar */
     --navheight: 5vw;
     --navbg: var(--navy);
     --navfc: var(--pink);
     --navhc: #7f6269aa;
+
+    /* Boxes */
+    --boxbg: var(--prune);
+    --boxfc: var(--blush);
+    --boxhc: var(--mauve);
 }

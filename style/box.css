@@ -1,0 +1,36 @@
+.box-holder {
+    display: flex;
+    flex-direction: row;
+}
+
+@media screen and (max-width: 1000px) {
+    .box-holder {
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+}
+
+.box {
+    background-color: var(--boxbg);
+    color: var(--boxfc);
+    border-radius: 7px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+
+    position: relative;
+    width: 100%;
+    padding: 2%;
+    margin: 1%;
+}
+
+.box:hover > .uhl::before {
+    transition: all 0.3 ease;
+    height: 100%;
+}
+
+.box > h3 {
+    font-family: var(--header);
+}

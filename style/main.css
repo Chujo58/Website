@@ -1,13 +1,16 @@
 @import "./constants.css";
 @import "./navbar.css";
 @import "./page.css";
+@import "./box.css";
+@import "./highlight.css";
 
 html {
     scrollbar-color: var(--navhc) var(--navbg);
 }
 
 *::selection {
-    background: var(--text-highlight);
+    background: var(--text-highlight-bg);
+    color: var(--text-highlight-fc);
 }
 
 body {

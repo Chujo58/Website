@@ -11,7 +11,7 @@ app.config(function ($routeProvider) {
             templateUrl: "pages/main.htm",
         })
         .when("/projects", {
-            templateUrl: "routing/red.htm",
+            templateUrl: "pages/box.htm",
         })
         .when("/photography", {
             templateUrl: "routing/blue.htm",

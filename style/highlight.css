@@ -1,0 +1,27 @@
+.uhl {
+    text-align: center;
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    z-index: 5;
+}
+
+.uhl::before {
+    content: "";
+    align-self: center;
+    height: 50%;
+    width: 100%;
+    display: block;
+    z-index: -5;
+
+    position: absolute;
+    transition: all 0.3s ease;
+    background: linear-gradient(180deg, transparent 50%, var(--color) 50%);
+}
+
+.uhl:hover::before {
+    transition: all 0.3s ease;
+    height: 100%;
+}
