@@ -14,6 +14,13 @@ app.config(function ($routeProvider) {
             templateUrl: "pages/projects.htm",
         })
         .when("/photography", {
-            templateUrl: "routing/blue.htm",
+            templateUrl: "pages/photography.htm",
         });
 });
+
+function updateNavbar(index) {
+    var items = $(".nav-item");
+    items.removeClass("active");
+    items.eq(index).addClass("active");
+    // console.log($(".nav-item"), index);
+}

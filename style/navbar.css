@@ -5,6 +5,7 @@
     text-decoration: none;
 
     color: var(--navfc);
+    font-weight: 300;
 }
 
 #navbar-wrapper {
@@ -41,4 +42,13 @@
     margin: 1vw;
     text-decoration: none;
     color: var(--navfc);
+}
+
+.nav-item.active {
+    color: var(--navfc-act);
+    font-weight: 600;
+}
+
+.nav-item.active::before {
+    background: linear-gradient(180deg, transparent 50%, var(--navhc-act) 50%);
 }

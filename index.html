@@ -25,13 +25,16 @@
     <body ng-app="myApp">
         <div id="navbar-wrapper">
             <div id="site-navbar">
-                <a href="#/!" id="title">Chloé's Portfolio</a>
+                <a class="nav-item" style="margin: 0;" href="#/!"
+                    id="title" onclick="updateNavbar(0);">Chloé's Portfolio</a>
             </div>
             <div id="utility-navbar">
                 <a class="nav-item uhl" style="--color: var(--navhc);"
-                    href="#!projects">Coding Projects</a>
+                    href="#!projects" onclick="updateNavbar(1);">Coding
+                    Projects</a>
                 <a class="nav-item uhl" style="--color: var(--navhc);"
-                    href="#!photography">Photography</a>
+                    href="#!photography"
+                    onclick="updateNavbar(2);">Photography</a>
             </div>
         </div>
         <div ng-view></div>

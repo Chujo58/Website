@@ -1,6 +1,25 @@
+.title-holder {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    font-family: var(--fancy);
+    font-size: calc(var(--navheight) / 1.25);
+    color: var(--navy);
+    background-color: var(--pink);
+}
+
 .box-holder {
     display: flex;
     flex-direction: row;
+}
+
+.box-column {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 1.5%;
 }
 
 @media screen and (max-width: 1000px) {
@@ -21,14 +40,18 @@
     align-items: center;
 
     position: relative;
-    width: 100%;
-    padding: 2%;
-    margin: 1%;
+    width: calc(100% - 2 * calc(var(--navheight) / 2) - 4px);
+    padding: calc(var(--navheight) / 2);
+    margin: 2px;
 }
 
 .box:hover > .uhl::before {
     transition: all 0.3 ease;
     height: 100%;
+}
+
+.box > p {
+    text-align: justify;
 }
 
 .box > h3 {
