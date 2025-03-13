@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Portfolio</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Passions+Conflict&display=swap"
+            rel="stylesheet">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <!-- jQuery -->
+        <script
+            src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <script src="js/sticky.js"></script>
+
+        <!-- AngularJS -->
+        <script
+            src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+        <script
+            src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-route.js"></script>
+        <!-- Custom CSS and JS -->
+        <link rel="stylesheet" href="style/main.css">
+        <script src="js/main.js"></script>
+    </head>
+    <body ng-app="myApp">
+        <div id="navbar-wrapper">
+            <div id="site-navbar">
+                <a href="#/!" id="title">Chloé's Portfolio</a>
+            </div>
+            <div id="utility-navbar">
+                <a class="nav-item" href="#!projects">Coding Projects</a>
+                <a class="nav-item" href="#!photography">Photography</a>
+            </div>
+        </div>
+
+        <div ng-view>
+
+        </div>
+
+        <!-- <div id="content">
+            <div id="home" class="page active">
+                
+            </div>
+            <div id="about" class="page"></div>
+            <div id="projects" class="page"></div>
+            <div id="contact" class="page"></div>
+        </div> -->
+    </body>
+</html>

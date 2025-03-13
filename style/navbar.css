@@ -1,0 +1,68 @@
+#title {
+    font-family: "Passions Conflict", serif;
+    font-size: var(--navheight);
+    padding-right: calc(var(--navheight) / 4);
+    text-decoration: none;
+
+    color: var(--navfc);
+}
+
+#navbar-wrapper {
+    background-color: var(--navbg);
+    color: var(--navfc);
+    width: calc(100% - var(--navheight) / 2);
+    height: var(--navheight);
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    padding-left: calc(var(--navheight) / 4);
+    padding-right: calc(var(--navheight) / 4);
+
+    font-family: "Cinzel", serif;
+    font-weight: 500;
+}
+
+#utility-navbar {
+    display: flex;
+    flex-direction: row;
+    align-content: space-between;
+    margin-left: auto;
+}
+
+.fixed {
+    position: fixed;
+}
+
+.nav-item {
+    text-align: center;
+    position: relative;
+
+    display: flex;
+    margin: 1vw;
+
+    flex-direction: column;
+    justify-content: flex-end;
+    z-index: 5;
+    text-decoration: none;
+    color: var(--navfc);
+}
+
+.nav-item::before {
+    content: "";
+    align-self: center;
+    height: 50%;
+    width: 100%;
+    display: block;
+    z-index: 0;
+
+    position: absolute;
+    transition: all 0.3s ease;
+    background: linear-gradient(180deg, transparent 50%, var(--navhc) 50%);
+}
+
+.nav-item:hover::before {
+    transition: all 0.3s ease;
+    height: 100%;
+}
