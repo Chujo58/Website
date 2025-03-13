@@ -1,0 +1,5 @@
+.project-image {
+    width: 100%;
+    border-radius: var(--border);
+    border: 2px solid var(--boxhc);
+}

@@ -13,7 +13,7 @@
 .box {
     background-color: var(--boxbg);
     color: var(--boxfc);
-    border-radius: 7px;
+    border-radius: var(--border);
 
     display: flex;
     flex-direction: column;

@@ -3,6 +3,8 @@
 @import "./page.css";
 @import "./box.css";
 @import "./highlight.css";
+@import "./image.css";
+@import "./link.css";
 
 html {
     scrollbar-color: var(--navhc) var(--navbg);

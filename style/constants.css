@@ -26,4 +26,5 @@
     --boxbg: var(--prune);
     --boxfc: var(--blush);
     --boxhc: var(--mauve);
+    --border: 7px;
 }

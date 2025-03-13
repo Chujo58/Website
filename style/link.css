@@ -1,0 +1,21 @@
+.box-link {
+    color: color-mix(in srgb, var(--boxhc) 50%, var(--boxfc) 50%);
+    display: inline;
+}
+
+.github-link {
+    color: var(--navy);
+    display: flex;
+    flex-direction: row;
+
+    align-items: center;
+    font-family: var(--header);
+    font-weight: 500;
+}
+
+.github-link > img {
+    width: calc(var(--navheight) / 2);
+    filter: invert(6%) sepia(12%) saturate(5503%) hue-rotate(194deg)
+        brightness(93%) contrast(95%);
+    margin-right: calc(var(--navheight) / 4);
+}
